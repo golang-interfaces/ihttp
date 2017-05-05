@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.org/virtual-go/vhttp.svg?branch=master)](https://travis-ci.org/virtual-go/vhttp)
-[![Coverage](https://codecov.io/gh/virtual-go/vhttp/branch/master/graph/badge.svg)](https://codecov.io/gh/virtual-go/vhttp)
 
 # problem statement
 
