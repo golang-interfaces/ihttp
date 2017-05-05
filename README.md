@@ -2,12 +2,11 @@
 
 # problem statement
 
-http package for virtual-go
+native [http package](https://golang.org/pkg/http/) exposed via interface
 
 # features
 
-- API compatible w/ native [http package](https://golang.org/pkg/http/)
-- API exposed via interface
+- API compatible w/ native [http package](https://golang.org/pkg/http/) exposed via interface
 - fake implementation to allow faking interactions
 
 > *Be advised: this project is currently at Major version zero. Per the
