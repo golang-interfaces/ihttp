@@ -21,6 +21,6 @@ run:
         echo "linting code"
         govendor vet +local
     dirs:
-      /go/src/github.com/golang-interfaces/vhttp: srcDir
+      /go/src/github.com/golang-interfaces/ihttp: srcDir
     image: { ref: 'golang:1.8' }
-    workDir: /go/src/github.com/golang-interfaces/vhttp
+    workDir: /go/src/github.com/golang-interfaces/ihttp
