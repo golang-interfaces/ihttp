@@ -10,14 +10,7 @@ outputs:
     dir:
       description: directory containing the projects source code
 run:
-  container:
-    cmd:
-      - sh
-      - -ce
-      - |
-        echo "cleaning untracked files from workdir"
-        git clean -fXd -e !.idea/
-    dirs:
-      /go/src/github.com/golang-interfaces/ihttp: srcDir
-    image: { ref: 'golang:1.8' }
-    workDir: /go/src/github.com/golang-interfaces/ihttp
+  op:
+    pkg: { ref: github.com/opspec-pkgs/git.clean#1.0.0 }
+    inputs: { srcDir, opts: -ffXd -e !.idea/ }
+    outputs: { srcDir }
