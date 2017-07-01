@@ -6,6 +6,8 @@ import (
   "net/http"
 )
 
+//go:generate counterfeiter -o ./fake.go --fake-name Fake ./ IHTTP
+
 type IHTTP interface {
 
   // ServeContent replies to the request using the content in the
